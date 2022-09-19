@@ -250,6 +250,8 @@ body .card .play-list .track .track-duration {
   cursor: pointer;
 }
 
+
+
 .play-list::-webkit-scrollbar {
   width: 5px;
 }

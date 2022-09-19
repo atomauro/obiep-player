@@ -3,6 +3,11 @@
 import React from 'react';
 import './App.css'
 
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PauseIcon from '@mui/icons-material/Pause';
+
+import SkipNextIcon from '@mui/icons-material/SkipNext';
+import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 
 export default class CardProfile extends React.Component {
     state = {
@@ -178,15 +183,15 @@ export default class CardProfile extends React.Component {
             </div>
             
             <div className="controls">
-              <button onClick={this.prevSong} className="prev prev-next current-btn"><i className="fas fa-backward"></i></button>
+              <button onClick={this.prevSong} className="prev prev-next current-btn"><SkipPreviousIcon fontSize='medium' className="fas"></SkipPreviousIcon></button>
               
               <button onClick={this.playOrPause} className="play current-btn">
                 {
-                  (!pause) ? <i className="fas fa-play"></i>
-                  :<i class="fas fa-pause"></i>
+                  (!pause) ? <PlayArrowIcon fontSize='medium' className="fas"></PlayArrowIcon>
+                  :<PauseIcon fontSize='medium' className="fas"></PauseIcon>
                 }
               </button>
-              <button onClick={this.nextSong} className="next prev-next current-btn"><i className="fas fa-forward"></i></button>
+              <button onClick={this.nextSong} className="next prev-next current-btn"><SkipNextIcon fontSize='medium' className="fas"></SkipNextIcon></button>
             </div>
             
           </div>
