@@ -13,10 +13,10 @@ export default class CardProfile extends React.Component {
     state = {
       index: 3,
       currentTime: '0:00',
-      musicList: [{name:'Nice piano and ukulele', author: 'Royalty', img: 'https://www.bensound.com/bensound-img/buddy.jpg', audio:'https://www.bensound.com/bensound-music/bensound-buddy.mp3', duration: '2:02'}, 
-        {name:'Gentle acoustic', author: 'Acoustic', img: 'https://www.bensound.com/bensound-img/sunny.jpg', audio:'https://www.bensound.com//bensound-music/bensound-sunny.mp3', duration: '2:20'},
-        {name:'Corporate motivational', author: 'Corporate', img: 'https://www.bensound.com/bensound-img/energy.jpg', audio:'https://www.bensound.com/bensound-music/bensound-energy.mp3', duration: '2:59'},
-        {name:'Slow cinematic', author: 'Royalty', img: 'https://www.bensound.com/bensound-img/slowmotion.jpg', audio:'https://www.bensound.com/bensound-music/bensound-slowmotion.mp3', duration: '3:26'}],
+      musicList: [{name:'Soy Feliz', author: 'Obie P', img: 'https://lavibrante.com/wp-content/uploads/2021/10/Obie-P.jpg', audio:'https://obiep.com/wp-content/uploads/2022/07/SOy-Feliz.mp3', duration: '2:02'}, 
+        {name:'A Pasarla Nice', author: 'Obie P', img: 'https://i.ytimg.com/vi/Ix2y3jrbCAE/maxresdefault.jpg', audio:'https://obiep.com/wp-content/uploads/2022/07/A-Pasarla-Nice-Obie-P-Official.mp3', duration: '2:20'},
+        {name:'Control', author: 'Obie P', img: 'https://dicomania.com/wp-content/uploads/2021/10/Obie-P.jpg', audio:'https://obiep.com/wp-content/uploads/2022/07/control-2.mp3', duration: '2:59'},
+        {name:'Noche Inolvidable', author: 'Obie P',img:'https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/251470491_5180807985279801_8952548548704625692_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MqBY_os6NLkAX_slUBv&_nc_zt=23&_nc_ht=scontent.feoh8-1.fna&oh=00_AT_faNovPBSv-GHaZx_OZa3TaIYnBbvoA86jA89dSXp2iQ&oe=632D2B23', audio: 'https://obiep.com/wp-content/uploads/2022/07/noche-inolvidable.mp3', duration: '3:26'}],
       pause: false,
     };
   
@@ -169,7 +169,7 @@ export default class CardProfile extends React.Component {
                 Your browser does not support the audio element.
             </audio>
             <div className="img-wrap">
-              <img src={ currentSong.img } alt="alt1"/>
+              <img src={ currentSong.img } style={{objectFit:'cover'}} alt="alt1"/>
              </div>
             <span className="song-name">{ currentSong.name }</span>
             <span className="song-autor">{ currentSong.author }</span>
