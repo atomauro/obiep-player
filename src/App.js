@@ -32,7 +32,7 @@ function App() {
       color: '#FFFFF',
       position: "absolute",
       bottom: '1rem',
-      right: '1rem',
+      right: '5rem',
       zIndex: 1,}}
      elevation={0}>
         <LibraryMusicIcon/>
