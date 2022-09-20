@@ -30,10 +30,10 @@ function App() {
      }}
      style={{    
       color: '#FFFFF',
-      position: "absolute",
+      position: "fixed",
       bottom: '1rem',
       left: '1rem',
-      zIndex: 1,}}
+      zIndex: 10,}}
      elevation={0}>
         <LibraryMusicIcon/>
      </Fab>
