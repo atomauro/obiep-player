@@ -160,6 +160,8 @@ export default class CardProfile extends React.Component {
       const { musicList, index, currentTime, pause } = this.state;
       const currentSong = musicList[index];
       return (
+        <div className='bodyplayer'>
+
         <div className="card">
           <div className="current-song">
             <audio ref={ref => this.playerRef = ref}>
@@ -217,6 +219,7 @@ export default class CardProfile extends React.Component {
                            </div>
                           )}
           </div>
+        </div>
         </div>
       )
     }
